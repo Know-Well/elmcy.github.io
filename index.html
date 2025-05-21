@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <img src="image/photo.jpg" alt="My Profile Photo" width="200" />
+    <h1>Hello, I'm Noel E. Macay</h1>
+    <p>Aspiring Front-End Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I’m an aspiring front-end developer with a passion for transforming ideas into intuitive and visually engaging user experiences. With a background in IT support and a growing skill set in HTML, CSS, JavaScript, and modern frameworks like React, I’m diving headfirst into the world of web development.
+
+    What excites me most is the intersection of creativity and code—bringing static designs to life, optimizing usability, and making every interaction feel effortless for users. I'm constantly learning, building, and refining my craft through hands-on projects, online courses, and late-night coding sessions.
+
+    Driven, curious, and detail-oriented, I aim to create clean, responsive, and accessible interfaces that don’t just look good, but feel great to use. I believe in writing maintainable code, staying up-to-date with the latest trends, and always thinking from the user’s perspective.
+
+    When I’m not coding, I enjoy exploring design tools, editing content, and improving my problem-solving skills—whether it’s fixing a bug or figuring out the best UI layout for a feature.
+
+    I'm currently seeking opportunities to grow, collaborate, and contribute to real-world projects where I can turn ideas into polished digital experiences.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript (learning...)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:macaynoel@gmail.com">macaynoel@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> yourusername</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i> yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 ELMCY. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+
+    scrollTopBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+
+</body>
+</html>
